@@ -2,7 +2,6 @@ package dz.seminar3;
 
 import java.util.ArrayList;
 import java.util.Optional;
-import java.util.OptionalDouble;
 import java.util.Random;
 
 public class Main {
