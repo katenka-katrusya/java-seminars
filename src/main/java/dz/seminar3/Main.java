@@ -6,19 +6,19 @@ import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
-//        listIntNums();
-        minMaxAverage();
+//        listIntNums(10);
+        minMaxAverage(10);
     }
 
 
 
 
     //   1. Пусть дан произвольный список целых чисел, удалить из него четные числа (в языке уже есть что-то готовое для этого)
-    private static void listIntNums() {
+    private static void listIntNums(int n) {
         ArrayList<Integer> list = new ArrayList<>();
         Random random = new Random();
 
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < n; i++) {
             list.add(random.nextInt(50));
         }
 
@@ -30,11 +30,11 @@ public class Main {
 
 
 //    2. Задан целочисленный список ArrayList. Найти минимальное, максимальное и среднее арифметическое из этого списка.
-    private static void minMaxAverage() {
+    private static void minMaxAverage(int n) {
         ArrayList<Integer> list = new ArrayList<>();
         Random random = new Random();
 
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < n; i++) {
             list.add(random.nextInt(50));
         }
 
