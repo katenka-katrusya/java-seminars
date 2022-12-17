@@ -10,20 +10,22 @@ public class MyStack {
 
         Collections.addAll(arrayStack, "house", "friend", "cafe", "car", "computer");
 
-        push("hello", arrayStack); //добавить в конец
-        System.out.println(peek(arrayStack)); //посмотреть последнее в стеке
-        System.out.println(pop(arrayStack)); //удалить и извлечь последнее в стеке
+        System.out.println("Элементы стека: " + arrayStack);
+        push("hello"); //добавить в конец
+        System.out.println("Последний элемент в стеке: " + peek()); //посмотреть последнее в стеке
+        System.out.println("Извлечённый последний элемент в стеке: " + pop()); //удалить и извлечь последнее в стеке
     }
 
-    private static void push(String str, LinkedList<String> list) {
-        list.push(str);
+    private static void push(String str) {
+        arrayStack.push(str);
+        System.out.println("Элемент добавлен в конец стека: " + arrayStack);
     }
 
-    private static String peek(LinkedList<String> list) {
-        return list.peek();
+    private static String peek() {
+        return arrayStack.peek();
     }
 
-    private static String pop(LinkedList<String> list) {
-        return list.pop();
+    private static String pop() {
+        return arrayStack.pop();
     }
 }
