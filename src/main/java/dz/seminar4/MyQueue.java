@@ -10,7 +10,7 @@ public class MyQueue {
 
         Collections.addAll(arrayQueue, "house", "friend", "cafe", "car", "computer");
 
-        System.out.println("Элементы стека: " + arrayQueue);
+        System.out.println("Элементы списка: " + arrayQueue);
         add("hello"); //добавить в конец
         System.out.println("Первый элемент в очереди: " + top()); //посмотреть первое в очереди
         System.out.println("Извлечённый первый элемент в очереди: " + remove()); //извлечь и вернуть первое в очереди
