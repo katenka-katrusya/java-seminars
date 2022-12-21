@@ -4,14 +4,17 @@ package dz.seminar5;
 import java.util.HashMap;
 import java.util.List;
 
+
 public class Phonebook {
+
+    public static HashMap<String, List<String>> telephoneBook = new HashMap<>();
+
     public static void main(String[] args) {
+
         telephoneBook("Смирнова");
     }
 
     private static void telephoneBook(String user) {
-
-        HashMap<String, List<String>> telephoneBook = new HashMap<>();
 
         telephoneBook.put("Иванов", List.of("32-15-44", "12-12-10", "8-800-555-44-12"));
         telephoneBook.put("Смирнова", List.of("45-34-12", "8-945-890-90-00"));
@@ -20,7 +23,11 @@ public class Phonebook {
         telephoneBook.put("Жирнов", List.of("33-15-90"));
         telephoneBook.put("Коваленко", List.of("22-11-10", "10-21-78", "8-950-56-70"));
 
-        System.out.println(user + ": " + telephoneBook.get(user));
+        if (telephoneBook.containsKey(user)) {
+            String phone = String.join(", ", telephoneBook.get(user));
+            System.out.println(user + ": " + phone);
+        } else {
+            System.out.print("Такого человека в телефонной книге нет");
+        }
     }
-
 }
