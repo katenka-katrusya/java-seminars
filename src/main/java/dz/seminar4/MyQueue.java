@@ -17,7 +17,7 @@ public class MyQueue {
     }
 
     private static void add(String str) {
-        arrayQueue.addLast(str);
+        arrayQueue.add(str);
         System.out.println("Элемент добавлен в конец очереди: " + arrayQueue);
     }
 
